@@ -1,6 +1,7 @@
 class User {
-    constructor(name, password, email, image, title, chatNotification)
+    constructor(id, name, password, email, image, title, chatNotification)
     {
+        this.id = id;
         this.name = name;
         this.password = password;
         this.email = email;
@@ -9,3 +10,5 @@ class User {
         this.chatNotification = chatNotification; // true / false
     }
 }
+
+export default User;

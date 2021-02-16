@@ -1,5 +1,6 @@
 class ChatMessage {
-    constructor(createdDate, message, user) {
+    constructor(id, createdDate, message, user) {
+        this.id = id;
         this.createdDate = createdDate;
         this.message = message;
         this.user = user;
