@@ -1,8 +1,8 @@
 class ChatRoom {
-    constructor(createdDate, name){
+    constructor(createdDate, name, chatMessages){
         this.createdDate = createdDate;
         this.name = name;
-        this.chatMessages = [];
+        this.chatMessages = chatMessages;
     }
 }
 
