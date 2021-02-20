@@ -6,7 +6,7 @@ import { CHATROOM } from './../data/dummy-data';
 const Chat = props => {
     console.log(CHATROOM);
    return (
-      <View>
+      <View style={styles.container}>
           <FlatList
             data={CHATROOM}
             renderItem={itemData => (
@@ -19,7 +19,11 @@ const Chat = props => {
 }
 
 const styles = StyleSheet.create({
-   
+    container: {
+         flex: 1,
+         justifyContent: 'center',
+         alignItems: 'center'
+    },
 });
 
 export default Chat;

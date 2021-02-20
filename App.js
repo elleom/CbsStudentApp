@@ -6,14 +6,30 @@ import { StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+
 
 import Home from './screens/Home';
 import Discover from './screens/Discover';
 import Chat from './screens/Chat';
+import ChatMessages from './screens/ChatMessages';
 import Menu from './screens/Menu';
 
 
 const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
+
+function StackNavigator() {
+  return (
+      <Stack.Navigator>
+        <Stack.Screen name="Chat" component={Chat} options={{
+          title: 'CHAT', 
+        }}/>
+        <Stack.Screen name="ChatMessages" component={ChatMessages} />
+      </Stack.Navigator>
+  );
+}
+
 
 export default function App() {
 
@@ -48,7 +64,7 @@ export default function App() {
     >
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Discover" component={Discover} />
-      <Tab.Screen name="Chat" component={Chat} />
+      <Tab.Screen name="Chat" component={StackNavigator} />
       <Tab.Screen name="Menu" component={Menu} />
     </Tab.Navigator>
   </NavigationContainer>

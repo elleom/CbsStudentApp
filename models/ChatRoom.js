@@ -4,6 +4,7 @@ class ChatRoom {
         this.createdDate = createdDate;
         this.name = name;
         this.chatMessages = chatMessages;
+
     }
 }
 
