@@ -19,7 +19,9 @@ export default function App() {
 
 
   return (
+    
     <NavigationContainer>
+    
     <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
