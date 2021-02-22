@@ -6,7 +6,7 @@ const Home = (props) => {
 	return (
 		<View>
 			<View>
-				<Header title='HOME' />
+				<Header title='FEED' />
 			</View>
 			<View>
 				<Text>Hi, I am the Home Screen</Text>
