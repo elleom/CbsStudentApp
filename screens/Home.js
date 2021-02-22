@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-import Header from '../models/Header'
+import Header from '../components/Header'
 
 const Home = (props) => {
 	return (

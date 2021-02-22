@@ -11,7 +11,6 @@ import Home from './screens/Home';
 import Discover from './screens/Discover';
 import Chat from './screens/Chat';
 import Menu from './screens/Menu';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 import CustomColors from './constants/CustomColors'
 
 
