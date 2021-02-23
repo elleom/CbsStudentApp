@@ -1,15 +1,17 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Card = (props) => {
 	return (
-		<View style={{ ...styles.card, ...props.style }}>{props.children}</View>
+		<TouchableOpacity>
+			<View style={{ ...styles.card, ...props.style }}>{props.children}</View>
+		</TouchableOpacity>
 	);
 };
 
 const styles = StyleSheet.create({
 	card: {
-		
 		/* the shadow properties work only on IOS */
 		shadowColor: "black",
 		shadowOpacity: 0.26,
@@ -19,8 +21,8 @@ const styles = StyleSheet.create({
 		/*to do the same i android use the following */
 		elevation: 8,
 		backgroundColor: "white",
-		padding: 20,
-		borderRadius: 15,
+		padding: 10,
+		//borderRadius: 15,
 	},
 });
 
